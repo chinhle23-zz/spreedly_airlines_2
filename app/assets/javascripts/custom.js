@@ -1,12 +1,12 @@
 function openExpress() {
-  const priceLinks = document.querySelectorAll('.price');
-  const display = document.querySelector('.text');
-  for (let link of priceLinks) {
-    link.addEventListener('click', function(){
-      console.log(link.textContent);
-      display.textContent = link.textContent;
-    });
-  }
+  // const priceLinks = document.querySelectorAll('.price');
+  // const display = document.querySelector('.text');
+  // for (let link of priceLinks) {
+  //   link.addEventListener('click', function(){
+  //     console.log(link.textContent);
+  //     display.textContent = link.textContent;
+  //   });
+  // }
 }
 
 function main() {

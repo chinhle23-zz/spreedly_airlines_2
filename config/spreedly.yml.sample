@@ -1,0 +1,41 @@
+development:
+  # https://docs.spreedly.com/basics/credentials/
+  environment_key: {{ENV_KEY}}
+  access_secret: {{ACCESS_SECRET}}
+
+  # curl https://core.spreedly.com/v1/gateways.json \
+  #   -u "$ENV_KEY:$ACCESS_SECRET" \
+  #   -H 'Content-Type: application/json' \
+  #   -d '{
+  #         "gateway": {
+  #           "gateway_type": "test"
+  #         }
+  #       }'
+  gateway_id: {{GATEWAY_TOKEN}}
+
+  # curl https://core.spreedly.com/v1/receivers.json \
+  #   -u "$ENV_KEY:$ACCESS_SECRET" \
+  #   -H 'Content-Type: application/json' \
+  #   -d '{
+  #         "receiver": {
+  #           "receiver_type": "test",
+  #           "hostnames": "https://spreedly-echo.herokuapp.com",
+  #           "credentials": [
+  #             {
+  #               "name": "app_name",
+  #               "value": "spreedly-airlines",
+  #               "safe": true
+  #             },
+  #             {
+  #               "name": "api_key",
+  #               "value": 1234
+  #             },
+  #             {
+  #               "name": "secret",
+  #               "value": 5678
+  #             }
+  #           ]
+  #         }
+  #       }'
+  expedia_receiver_id: {{RECEIVER_TOKEN}}
+  expedia_receiver_hostname: https://spreedly-echo.herokuapp.com

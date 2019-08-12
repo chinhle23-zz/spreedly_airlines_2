@@ -1,13 +1,13 @@
 <h1>All Flights</h1>
 
 <ul id="flights">
-    <% @flights.each do |flight| %>
-        <li>
-            From: <%= flight.origin %> 
-            To: <%= flight.destination %> 
-            Price: <%= link_to flight.price, '#', class: "price" %>
-        </li>
-    <% end %>
+	<% @flights.each do |flight| %>
+		<li>
+				From: <%= flight.origin %> 
+				To: <%= flight.destination %> 
+				Price: <%= link_to flight.price, '#', class: "price" %>
+		</li>
+	<% end %>
 </ul>
 
 <p class="text"></p>
